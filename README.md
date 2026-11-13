@@ -13,6 +13,15 @@ Follow the [instructions](https://alire.ada.dev/docs/toolchains) to install this
 
 To build the application, we are going to use `gprbuild`, version 25.0.0, also installed through Alire. 
 
+Add the binaries of the toolchain and of `gprbuild` to your `PATH` variable: 
+```
+# Add path to gprbuild
+PATH="$HOME/.local/share/alire/toolchains/gprbuild_25.0.1_9a2e6cfb/bin:$PATH"
+
+# Add path to ARM-ELF GNAT cross-compiler
+PATH="$HOME/.local/share/alire/toolchains/gnat_arm_elf_16.1.0_9e6bb669/bin:$PATH"
+```
+
 
 ## 2. Building the runtime library
 
