@@ -3,7 +3,7 @@ project Embedded_Wasm_Over_Ada is
    for Languages use ("Ada");
 
    for Source_Dirs use ("src");
-   for Main use ("second_main.adb");
+   for Main use ("main.adb");
    for Object_Dir use "out";
 
    for Runtime ("Ada") use "link_to_runtime";
@@ -11,7 +11,7 @@ project Embedded_Wasm_Over_Ada is
    for Target use "arm-eabi";
 
    package Compiler is
-      for Switches ("Ada") use ("-g", "-gnatwa", "-gnatQ", "-fstack-usage");
+      for Switches ("Ada") use ("-g", "-gnatwa", "-gnatQ", "-fstack-usage", "-gnat2022");
    end Compiler;
 
    package Linker is
